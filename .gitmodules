@@ -1,0 +1,6 @@
+[submodule "angular-question"]
+	path = angular-question
+	url = git@github.com:JorgeSaicoski/angular-question.git
+[submodule "node-courses"]
+	path = node-courses
+	url = git@github.com:JorgeSaicoski/node-courses.git
