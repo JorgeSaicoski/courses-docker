@@ -28,7 +28,7 @@ services:
         working_dir: /app
         environment:
             - NODE_ENV=development
-            - MONGODB_URI=mongodb://mongo:27017/courses
+            - DB_URI=mongodb://mongo:27017/courses
         depends_on:
             - mongo
         networks:
