@@ -26,6 +26,28 @@ sudo docker-compose up -d
 # Angular app
 
 If you want to deploy it in a server you need to change the Dockerfile with the instructions in the repository.
+And add this to the docker compose:
+```yml
+    angular:
+        build:
+            context: ./angular-question
+        container_name: angular-question
+        restart: always
+        ports:
+            - "4200:4200"
+        volumes:
+            - ./angular-question:/app
+        working_dir: /app
+        environment:
+            - NODE_ENV=development
+        networks:
+            - course-project
+ ```
+
+With this configuration you need to entry in the folder of Angular and make the command to start a serve:
+```bash
+sudo ng serve
+```
 
 # Nodejs
 
@@ -105,3 +127,5 @@ roles: [
 ]
 })
 ```
+
+

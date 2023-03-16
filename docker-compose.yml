@@ -1,21 +1,6 @@
 version: "3.9"
 
 services:
-    angular:
-        build:
-            context: ./angular-question
-        container_name: angular-question
-        restart: always
-        ports:
-            - "4200:4200"
-        volumes:
-            - ./angular-question:/app
-        working_dir: /app
-        environment:
-            - NODE_ENV=development
-        networks:
-            - course-project
-
     node:
         build:
             context: ./node-courses
