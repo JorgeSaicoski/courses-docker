@@ -30,12 +30,11 @@ services:
         networks:
             - course-project
         environment:
-            MONGO_DATA_DIR: /data/db
-            MONGO_LOG_DIR: /dev/null
-            MONGO_INITDB_ROOT_USERNAME: admin
-            MONGO_INITDB_ROOT_PASSWORD: 3^9r4$f$o7k*TSk9rJBWbh
-            MONGO_INITDB_DATABASE: courses
-
+            - MONGO_DATA_DIR=/data/db
+            - MONGO_LOG_DIR=/dev/null
+            - MONGO_INITDB_ROOT_USERNAME=admin
+            - MONGO_INITDB_ROOT_PASSWORD=3^9r4$f$o7k*TSk9rJBWbh
+            - MONGO_INITDB_DATABASE=courses
 networks:
     course-project:
         driver: bridge

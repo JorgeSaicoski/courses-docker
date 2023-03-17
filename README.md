@@ -101,6 +101,11 @@ Entry in the mongo.
 ```bash
 mongo --port 27017 -u admin -p '3^9r4$f$o7k*TSk9rJBWbh' --authenticationDatabase 'admin'
 ```
+or
+```bash
+mongo -u admin -p 3^9r4$f$o7k*TSk9rJBWbh --authenticationDatabase admin
+```
+
 Entry in your collection, if you dont change it is the courses:
 ```bash
 use courser
