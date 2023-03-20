@@ -53,6 +53,7 @@ sudo ng serve
 
 You need to create the conn.js as the documentation.
 You can change it as you want. But, save the user and password that you use to connect in the database.
+If you have proble, try to do npm install in the local folder
 
 # MongoDB
 
